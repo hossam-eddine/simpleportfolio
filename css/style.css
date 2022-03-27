@@ -1,0 +1,197 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: red;
+}
+#logo {
+  font-size: 80px;
+  color: rgb(19, 85, 226);
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0c96e69f, 0 0 40px #92c5e29f, 0 0 50px #0c96e69f, 0 0 60px #0c96e69f, 0 0 70px #0c96e69f;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #0c96e679, 0 0 40px #0c96e69f, 0 0 50px #0c96e69f, 0 0 60px #0c96e69f, 0 0 70px #0c96e69f, 0 0 80px #0c96e69f;
+  }
+}
+#menu li a{
+  color: white;
+  text-decoration: none;
+ transition-delay: 5s;
+
+}
+
+
+#menu li a:hover{
+  text-decoration: underline overline;
+  text-underline-offset: 0.4em;
+  text-decoration-color: #0c96e69f;
+}
+#home{
+  
+  height: 100vh;
+  background-image: url("../img/back.jpg") !important;
+  background-size: cover;
+  background-position: 100%;
+  padding-top: 75px;
+  
+}
+
+#name{
+  
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 4.5s steps(30, end),
+    glow 1s ease-in-out infinite alternate,
+    blink-caret .5s step-end infinite;
+}
+#profile{
+  
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* The typwriter cursor */
+  border-right: 5px solid #0c96e6;
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: typing  5s infinite ,blink-caret  .5s  infinite;
+}
+@keyframes typing {
+  from  { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  
+  
+}
+main{
+  background-color: whitesmoke;
+}
+#about{
+  background-color: transparent;
+  animation-name: example;
+  animation-duration: 4s;
+}
+.card i{
+  border: 5px solid rgb(22, 111, 245);
+}
+
+.card:hover{
+  filter: saturate(8);
+  background-color: #0d6efd;
+  color: white;
+}
+
+
+
+
+
+
+
+#myphoto:hover{
+  
+  filter: drop-shadow(8px 8px 10px gray);
+}
+footer{
+  background-color: black;
+}
+.fab{
+  
+  text-decoration: none;
+  padding: 20px;
+}
+
+.fab:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-github-square {
+  background: black;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.social{
+  
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px) { 
+  #name{
+    font-size: 5vw;
+   
+    
+    
+  }
+  .resume{
+    text-align: center;
+   
+  }
+  
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+  .info p{
+    font-size: 9px;
+  }
+  
+  
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+
+
